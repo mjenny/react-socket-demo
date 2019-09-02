@@ -1,16 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-socket-demo
+
+This is a demo app to show how react apps can interact with sockets.
+The app is using **express.js** for the backend, **socket.io-client** for the emulated speed sensor and **concurrently**, **react-d3-speedometer** and **socket.io-client** for the react frontend.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
+
+This runs the backend server, the sensor and the  app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+
+### `npm run start-app`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+### `npm run start-server`
+
+Runs the backend server. The server listens to port `4001` by default.
+
+### `npm run start-sensor`
+
+Runs the sensor emulation. The sensor will connect itself to the backend server and randomly generate speed measurements which will be reported to the backend server.
 
 ### `npm test`
 
